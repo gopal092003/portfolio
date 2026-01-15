@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gopal Gupta Portfolio</title>
+  <meta name="description" content="Portfolio of Gopal Gupta – Data Scientist & AI Enthusiast. Showcasing projects, skills, and services.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, offset: 100 });</script>
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- HEADER / NAVIGATION -->
+  <header class="fixed w-full z-20 bg-white shadow-md">
+    <div class="flex items-center justify-between px-8 py-4">
+      <div class="text-2xl font-bold ">Gopal Gupta</div>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-gray-700">
+        <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="projects.html" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="skills.html" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="certificates.html" class="hover:text-blue-600">Certificates</a></li>
+        <li><a href="services.html" class="hover:text-blue-600">Services</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <a href="assets/resume/Gopal_Gupta_Resume.pdf" class="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      <!-- Mobile Hamburger -->
+      <button class="md:hidden text-gray-700" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-8 pb-4 space-y-2 bg-white">
+      <a href="#home" class="block hover:text-blue-600">Home</a>
+      <a href="#about" class="block hover:text-blue-600">About</a>
+      <a href="#projects" class="block hover:text-blue-600">Projects</a>
+      <a href="#skills" class="block hover:text-blue-600">Skills</a>
+      <a href="#certificates" class="block hover:text-blue-600">Certificates</a>
+      <a href="#services" class="block hover:text-blue-600">Services</a>
+      <a href="#contact" class="block hover:text-blue-600">Contact</a>
+      <a href="#resume" class="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- HERO SECTION -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4 bg-gray-50 animate-fade-in">
+      <img src="assets/images/profile.jpg" alt="Gopal Gupta" class="w-48 h-48 rounded-full mb-6 object-cover">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up" data-aos-delay="10">Hi, I’m Gopal Gupta</h1>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4" data-aos="fade-up" data-aos-delay="10">Data Scientist & AI Enthusiast</h2>
+      <p class="text-gray-700 max-w-xl mb-8" data-aos="fade-up" data-aos-delay="10">Crafting intelligent, data-driven solutions that blend analytical depth with creative innovation.</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 px-8 bg-white">
+      <h2 class="text-3xl font-bold text-center mb-6"  data-aos="fade-up" data-aos-delay="10">About Me</h2>
+      <div class="md:flex md:items-center md:space-x-8 max-w-4xl mx-auto">
+        <img src="assets/images/profile.jpg" alt="Profile Picture" class="w-48 rounded-full mb-6 md:mb-0 mx-auto"  data-aos="fade-up" data-aos-delay="10">
+        <p class="text-gray-700 leading-relaxed text-center md:text-left"  data-aos="fade-up" data-aos-delay="10">
+          I’m a Data Scientist & AI Enthusiast driven by curiosity and a passion for turning complex data into meaningful insights. I love exploring the intersection of machine learning, analytics, and creative problem-solving, building models and solutions that make data truly speak.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 px-8 bg-gray-50"   data-aos="fade-up" data-aos-delay="10">
+      <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <h3 class="font-semibold mb-2">Programming & Frameworks</h3>
+          <p>Python, MySQL, TensorFlow, Flask, FastAPI, YOLOv8, DeepSORT</p>
+          <div class="h-2 w-full bg-gray-300 rounded mt-2"><div class="h-2 bg-blue-600 rounded w-80"></div></div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Data Science & ML Workflow</h3>
+          <p>Data Preprocessing, Model Training, Evaluation, Analytics, Visualization & Deployment</p>
+          <div class="h-2 w-full bg-gray-300 rounded mt-2"><div class="h-2 bg-blue-600 rounded w-64"></div></div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Computer Vision</h3>
+          <p>Object detection, tracking, and anomaly detection using deep learning</p>
+          <div class="h-2 w-full bg-gray-300 rounded mt-2"><div class="h-2 bg-blue-600 rounded w-72"></div></div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Tools & Soft Skills</h3>
+          <p>Git, Colab, Tableau | Problem-solving, collaboration, adaptability</p>
+          <div class="h-2 w-full bg-gray-300 rounded mt-2"><div class="h-2 bg-blue-600 rounded w-60"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 px-8 bg-white">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-delay="10">Featured Projects</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 border rounded hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="10">
+          <img src="assets/images/scripts/img4.png" alt="Feature Importance with SHAP" class="rounded mb-4">
+          <h3 class="font-semibold text-xl mb-2">Feature Importance with SHAP</h3>
+          <p class="text-gray-700 mb-2">A modern, responsive portfolio built with React and Framer Motion to showcase creative work dynamically.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-blue-600 text-sm">Python • SHAP • ML Explainability</span>
+            <a href="https://github.com/gopal092003/Feature-Importance-SHAP-Analysis" class="text-blue-600 hover:underline text-sm">View</a>
+          </div>
+        </div>
+        <div class="p-6 border rounded hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="10">
+          <img src="assets/images/scripts/rag.png" alt="Agentic Graph RAG" class="rounded mb-4">
+          <h3 class="font-semibold text-xl mb-2">Agentic Graph RAG</h3>
+          <p class="text-gray-700 mb-2">
+              An advanced RAG system leveraging agentic workflows and graph-based reasoning for smarter, context-aware AI responses.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-blue-600 text-sm">LLMs • RAG • Graph AI</span>
+            <a href="https://github.com/gopal092003/agentic-graph-rag" class="text-blue-600 hover:underline text-sm">View</a>
+          </div>
+        </div>
+        <div class="p-6 border rounded hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="10">
+          <img src="assets/images/vision/img1.png" alt="Real-Time Vision AI" class="rounded mb-4">
+          <h3 class="font-semibold text-xl mb-2">Handgun Detection System</h3>
+          <p class="text-gray-700 mb-2">
+              A real-time computer vision system for handgun detection using deep learning, aimed at enhancing security through automated threat detection.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-blue-600 text-sm">YOLO • Computer Vision • DL</span>
+            <a href="https://github.com/gopal092003/handgun-detection" class="text-blue-600 hover:underline text-sm">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project-page" class="py-20 px-8 bg-gray-50 text-center" data-aos="fade-up" data-aos-delay="10">
+      <div class="space-x-4">
+          <a href="projects.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="10">View all Projects</a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-8 bg-gray-50 text-center" data-aos="fade-up" data-aos-delay="10">
+      <h2 class="text-3xl font-bold mb-6">Interested in working together?</h2>
+      <p class="text-gray-700 mb-8">Let’s build something great!</p>
+      <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Get in Touch!</a>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 px-8 bg-white" data-aos="fade-up" data-aos-delay="10">
+      <h2 class="text-3xl font-bold text-center mb-12">Testimonials</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        </div>
+        <div class="p-6 border rounded">
+          <p class="text-gray-700 mb-4 italic">“Gopal brought both innovation and execution to our team. His work on developing and training Computer Vision models laid the groundwork for our future AI-driven drone systems. A highly capable and self-driven individual.”</p>
+          <span class="font-semibold">— Kshitij, Co-Founder & CEO, PAWAAC Drones</span>
+        </div>
+      </div>
+    </section>
+
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
+    class="fixed bottom-8 right-8 bg-transparent text-gray-400 p-3 hover:text-black dark:hover:text-black text-2xl font-bold transition-colors">
+    ↑
+    </button>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-50 border-t py-8 text-center">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://www.linkedin.com/in/gopal-gupta-0ab404281/" target="_blank"
+         rel="noopener noreferrer"
+         class="text-gray-600 hover:text-blue-600 hover:underline transition">LinkedIn</a>
+      <a href="https://github.com/gopal092003" target="_blank"
+         rel="noopener noreferrer"
+         class="text-gray-600 hover:text-gray-900 hover:underline transition">GitHub</a>
+    </div>
+  </footer>
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, offset: 100 });</script>
+
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    const stats = document.querySelector("#stats");
+    const duration = 1500;
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const target = +counter.dataset.target;
+        const start = performance.now();
+
+        const update = time => {
+          const progress = Math.min((time - start) / duration, 1);
+          counter.innerText = Math.floor(progress * target);
+          if (progress < 1) requestAnimationFrame(update);
+        };
+
+        requestAnimationFrame(update);
+      });
+    };
+
+    new IntersectionObserver((entries, obs) => {
+      if (entries[0].isIntersecting) { animateCounters(); obs.disconnect(); }
+    }, { threshold: 0.5 }).observe(stats);
+  </script>
+</body>
+</html>
